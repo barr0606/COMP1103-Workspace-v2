@@ -1,7 +1,8 @@
 <?php
-    require_once "./inc/file_manager.inc.php";
-    $animals = get_data('animals.json');
+require_once __DIR__ . "/inc/file_manager.inc.php";
+$animals = get_data('animals.json');
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,9 +51,14 @@
         </select>
         <div id="animal-container">
             <?php
-                foreach($animals as $animal) {
+                foreach ($animals as $animal) {
                     echo "<div class=\"animal-card\">";
                     echo "<img src=\"" . htmlspecialchars($animal['image']) . "\" alt=\"Picture of " . htmlspecialchars($animal['name']) . "\">";
+                    echo "<h3>" . htmlspecialchars($animal['name']) . "</h3>";
+                    echo "<p>Type: " . htmlspecialchars($animal['type']) . "</p>";
+                    echo "<p>Breed: " . htmlspecialchars($animal['breed']) . "</p>";
+                    echo "<p>Status: " . htmlspecialchars($animal['status']) . "</p>";
+                    echo "</div>";
                 }
             ?>
         </div>
