@@ -1,5 +1,5 @@
 <?php
-    require_once "/inc/file_manager.inc.php";
+    require_once "./inc/file_manager.inc.php";
     $animals = get_data('animals.json');
 ?>
 
