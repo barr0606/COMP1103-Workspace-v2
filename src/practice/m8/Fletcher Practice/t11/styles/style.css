@@ -195,16 +195,9 @@ tr:hover{
     display: none;
 }
 
-.animal-card[type="img"] {
-    width: auto;
-    max-width: 15px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
 img {
     width: 100%;
-    max-width: 15px;
+    max-width: 150px;
     border-radius: 4px;
     margin-bottom: 10px;   
 }
