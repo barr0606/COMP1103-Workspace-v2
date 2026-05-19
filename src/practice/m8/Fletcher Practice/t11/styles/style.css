@@ -195,7 +195,7 @@ tr:hover{
     display: none;
 }
 
-animal-card[type="img"] {
+.animal-card[type="img"] {
     width: 100%;
     max-width: 150px;
     border-radius: 4px;
