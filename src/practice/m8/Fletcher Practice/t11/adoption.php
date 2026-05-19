@@ -26,7 +26,7 @@
                 <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="adoption.html">Adopt a Pet</a>
+                <a href="adoption.php">Adopt a Pet</a>
             </li>
             <li>
                 <a href="application.html">Apply to Adopt</a>
