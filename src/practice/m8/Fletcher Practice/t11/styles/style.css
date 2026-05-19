@@ -196,7 +196,7 @@ tr:hover{
 }
 
 .animal-card[type="img"] {
-    width: 100%;
+    width: auto;
     max-width: 15px;
     border-radius: 4px;
     margin-bottom: 10px;
