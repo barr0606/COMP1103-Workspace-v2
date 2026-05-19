@@ -1,6 +1,6 @@
 <?php
     function get_data($filename) {
-        $path = __DIR__ . "/data/" . $filename;
+        $path = __DIR__ . "./data/animals.json" . $filename;
 
         if(!file_exists($path)) {
             return[];
