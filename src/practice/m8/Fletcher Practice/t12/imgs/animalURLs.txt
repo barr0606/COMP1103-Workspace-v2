@@ -1,0 +1,6 @@
+dog-101.jpg: https://upload.wikimedia.org/wikipedia/commons/b/bf/Bulldog_inglese.jpg
+tur-101.jpg: https://upload.wikimedia.org/wikipedia/commons/3/34/Australsnturtle2.jpg
+dog-102.jpg: https://upload.wikimedia.org/wikipedia/commons/d/d9/Grote_M%C3%BCnsterl%C3%A4nder_-_world_dog_show_2010.jpg
+cat-101.jpg: https://upload.wikimedia.org/wikipedia/commons/b/b9/%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%BE%D1%82_%D0%9B%D1%83%D0%BB%D0%B0%D0%BC%D0%B5%D0%B9_%D0%A2%D0%B0%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%9B%D0%B5%D0%B3%D0%B5%D0%BD%D0%B4%D0%B0%2C_%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5_WCF%2C_%D0%BE%D0%BA%D1%80%D0%B0%D1%81_%D0%B1%D0%BB%D1%8E_%D0%BF%D0%BE%D0%B8%D0%BD%D1%82_01_%28cropped%29.jpg
+dog-103.jpg: https://upload.wikimedia.org/wikipedia/commons/d/de/Beagle_Upsy.jpg
+bir-101.jpg: https://en.wiktionary.org/wiki/budgerigar#/media/File:Blue_male_budgie.jpg
