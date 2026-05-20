@@ -230,6 +230,18 @@ button {
     font-size: 1rem;
     cursor: pointer;
 }
+button:hover {
+    background-color: #219150;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
 .delete-btn, a.delete-btn {
     background-color: #e74c3c;
