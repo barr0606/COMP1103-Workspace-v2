@@ -14,7 +14,7 @@
             Apply to Adopt
         </h2>
         <div id="error-messages"></div>
-        <form method="POST" id="application-form" action="submit_application.php">
+        <form method="POST" id="application-form" action="process-application.php">
             <fieldset>
                 <legend>Your Details</legend>
                 <label for="firstname">First Name:</label>
@@ -23,8 +23,8 @@
                 <input type="text" id="lastname" name="lastname" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="you@example.com" required>
-                <label for="tel">Telephone:</label>
-                <input type="tel" id="tel" name="tel">
+                <label for="phone">Telephone:</label>
+                <input type="tel" id="phone" name="phone">
             </fieldset>
             <fieldset>
                 <legend>Housing Details</legend>
@@ -41,8 +41,8 @@
                     <br><input type="radio" id="smYard" name="yardType" value="small">Small Yard</input><br>
                     <input type="radio" id="medYard" name="yardType" value="medium">Medium Yard</input><br>
                     <input type="radio" id="lrgYard" name="yardType" value="large">Large Yard</input><br>
-                    <label for="Previouspetexperience">Previous Pet Experience:</label>
-                    <textarea rows="5"></textarea>
+                    <label for="message">Previous Pet Experience:</label>
+                    <textarea rows="5" id="message" name="message"></textarea>
                 </p>
             </fieldset>
             <input type="submit" id="submit" name="submit"></input>
