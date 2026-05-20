@@ -37,7 +37,7 @@ $apps = get_data('applications.json');
                 <tbody>
                     <?php foreach ($animals as $animal) : ?>
                         <tr>
-                            <td><a href="#"><?= htmlspecialchars($animal['id']) ?></a></td>
+                            <td><?= htmlspecialchars($animal['id']) ?></td>
                             <td><?= htmlspecialchars($animal['name']) ?></td>
                             <td><?= htmlspecialchars($animal['type']) ?></td>
                             <td><?= htmlspecialchars($animal['breed']) ?></td>
@@ -63,8 +63,8 @@ $apps = get_data('applications.json');
                 <tbody>
                     <?php foreach ($apps as $app) : ?>
                         <tr>
-                            <td><a href="#"><?= htmlspecialchars($app['id']) ?></a></td>
-                            <td><?= htmlspecialchars($app['name']) ?></td>
+                            <td><?= htmlspecialchars($app['id']) ?></td>
+                            <td><?= htmlspecialchars($app['first_name']) . ' ' . htmlspecialchars($app['last_name']) ?></td>
                             <td><?= htmlspecialchars($app['email']) ?></td>
                             <td><?= htmlspecialchars($app['phone']) ?></td>
                             <td><?= htmlspecialchars($app['status']) ?></td>
