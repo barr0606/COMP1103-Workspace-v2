@@ -4,10 +4,6 @@ require_once __DIR__ . "/inc/file_manager.inc.php";
 $animals = get_data('animals.json');
 ?>
 
-
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta author="Fletcher Barry" description="Happy Paws Animal Shelter Homepage">
@@ -17,28 +13,6 @@ $animals = get_data('animals.json');
 </head>
 
 <body>
-    <header>
-        <h1>
-            Happy Paws Animal Shelter
-        </h1>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.php">Home</a>
-            </li>
-            <li>
-                <a href="adoption.php">Adopt a Pet</a>
-            </li>
-            <li>
-                <a href="application.php">Apply to Adopt</a>
-            </li>
-            <li>
-                <a href="admin.php">Admin Page</a>
-            </li>
-
-        </ul>
-    </nav>
     <main>
         <h2>
             Our Guests Available for Adoption
@@ -64,13 +38,6 @@ $animals = get_data('animals.json');
             ?>
         </div>
     </main>
-    <footer>
-        <p>
-            © 2026 Happy Paws Shelter
-        </p>
-    </footer>
 </body>
-
-</html>
 
 <?php include 'inc/footer.php'; ?>

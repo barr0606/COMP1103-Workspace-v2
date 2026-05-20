@@ -1,22 +1,14 @@
 <?php include 'inc/header.php'; ?>
 
+<head>
+    <meta charset="UTF-8">
+    <meta author="Fletcher Barry" description="Happy Paws Animal Shelter Homepage">
+    <title>Happy Paws - Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.php">Home</a>
-            </li>
-            <li>
-                <a href="adoption.php">Adopt a Pet</a>
-            </li>
-            <li>
-                <a href="application.php">Apply to Adopt</a>
-            </li>
-            <li>
-                <a href="admin.php">Admin Page</a>
-            </li>
-        </ul>
-    </nav>
     <main>
         <h2>
             Welcome to Our Shelter

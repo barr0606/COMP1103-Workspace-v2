@@ -10,4 +10,10 @@ function get_data($filename) {
 
     return json_decode($json_content, true) ?? [];
 }
+
+function save_data($filename, $data) {
+    $path = dirname(__DIR__) . "/data/" . $filename;
+    $json_content = json_encode($data, JSON_PRETTY_PRINT);
+    file_put_contents($path, $json_content);
+}
 ?>

@@ -1,8 +1,5 @@
 <?php include 'inc/header.php'; ?>
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta author="Fletcher Barry" description="Happy Paws Animal Shelter Homepage">
@@ -12,28 +9,6 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            Happy Paws Animal Shelter
-        </h1>
-    </header>
-    <nav>
-        <ul>
-            <li>
-                <a href="index.php">Home</a>
-            </li>
-            <li>
-                <a href="adoption.php">Adopt a Pet</a>
-            </li>
-            <li>
-                <a href="application.php">Apply to Adopt</a>
-            </li>
-            <li>
-                <a href="admin.php">Admin Page</a>
-            </li>
-
-        </ul>
-    </nav>
     <main>
         <h2>
             Administration
@@ -93,13 +68,6 @@
             </tbody>
         </table>
     </main>
-    <footer>
-        <p>
-            © 2026 Happy Paws Shelter
-        </p>
-    </footer>
 </body>
-
-</html>
 
 <?php include 'inc/footer.php'; ?>
