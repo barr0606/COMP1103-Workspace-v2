@@ -66,21 +66,27 @@ $apps = get_data('applications.json');
                 </thead>
                 <tbody>
                     <?php foreach ($apps as $app) : ?>
+                        <?php $applicationId = $app['id'] ?? ''; ?>
+                        <?php $petId = $app['pet-id'] ?? ''; ?>
                         <tr>
-                            <td><?= htmlspecialchars($app['id']) ?></td>
-                            <td><?= htmlspecialchars($app['first_name']) . ' ' . htmlspecialchars($app['last_name']) ?></td>
-                            <td><?= htmlspecialchars($app['email']) ?></td>
-                            <td><?= htmlspecialchars($app['phone']) ?></td>
-                            <td><?= htmlspecialchars($app['pet-id']) ?></td>
+                            <td><?= htmlspecialchars($applicationId) ?></td>
+                            <td><?= htmlspecialchars($app['first_name'] ?? '') . ' ' . htmlspecialchars($app['last_name'] ?? '') ?></td>
+                            <td><?= htmlspecialchars($app['email'] ?? '') ?></td>
+                            <td><?= htmlspecialchars($app['phone'] ?? '') ?></td>
+                            <td><?= htmlspecialchars($petId) ?></td>
                             <td>
-                                <span style="color: <?= (strcasecmp($app['status'], 'approved') === 0) ? 'green' : 'black' ?>;">
-                                    <?= htmlspecialchars($app['status']) ?>
+                                <span style="color: <?= (strcasecmp($app['status'] ?? '', 'approved') === 0) ? 'green' : 'black' ?>;">
+                                    <?= htmlspecialchars($app['status'] ?? '') ?>
                                 </span>
                             </td>
-                            <td><?= htmlspecialchars($app['date']) ?></td>
+                            <td><?= htmlspecialchars($app['date'] ?? '') ?></td>
                             <td>
-                                <a href="delete-record.php?type=application&id=<?= urlencode($app['id']) ?>" class="delete-btn">Delete</a>
-                                <a href="approve-adoption.php?type=app&app_id=<?= urlencode($app['id']) ?>&pet_id=<?= urlencode($app['pet-id']) ?>" class="approve-btn">Approve</a>
+                                <?php if ($applicationId && $petId) : ?>
+                                    <a href="delete-record.php?type=application&id=<?= urlencode($applicationId) ?>" class="delete-btn">Delete</a>
+                                    <a href="approve-adoption.php?type=app&app_id=<?= urlencode($applicationId) ?>&pet_id=<?= urlencode($petId) ?>" class="approve-btn">Approve</a>
+                                <?php else : ?>
+                                    <span class="error-text">Incomplete record</span>
+                                <?php endif; ?>
                             </td>
                         </tr>
                     <?php endforeach; ?>

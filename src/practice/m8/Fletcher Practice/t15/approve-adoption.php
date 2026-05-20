@@ -2,8 +2,14 @@
 require_once 'inc/file_manager.inc.php';
 
 if (isset($_GET['app_id']) && isset($_GET['pet_id'])) {
-    $app_id = $_GET['app_id'];
-    $pet_id = $_GET['pet_id'];
+    $app_id = trim($_GET['app_id']);
+    $pet_id = trim($_GET['pet_id']);
+
+    if ($app_id === '' || $pet_id === '') {
+        header('Location: admin.php');
+        exit();
+    }
+
     $apps = get_data('applications.json');
 
     foreach ($apps as &$app) {
