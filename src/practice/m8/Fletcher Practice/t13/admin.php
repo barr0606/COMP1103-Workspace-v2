@@ -42,7 +42,7 @@ $apps = get_data('applications.json');
                             <td><?= htmlspecialchars($animal['type']) ?></td>
                             <td><?= htmlspecialchars($animal['breed']) ?></td>
                             <td><?= htmlspecialchars($animal['status']) ?></td>
-                            <td><?= htmlspecialchars($animal['image_path']) ?></td>
+                            <td><?= htmlspecialchars($animal['image']) ?></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
