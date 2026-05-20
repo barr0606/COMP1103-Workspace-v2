@@ -7,7 +7,7 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="adopttion.php">Adopt a Pet</a></li>
+                <li><a href="adoption.php">Adopt a Pet</a></li>
                 <li><a href="application.php">Apply to Adopt</a></li>
                 <li><a href="admin.php">Admin</a></li>
             </ul>
