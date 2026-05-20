@@ -32,6 +32,7 @@ $apps = get_data('applications.json');
                         <th>Breed</th>
                         <th>Status</th>
                         <th>Image Path</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,6 +44,7 @@ $apps = get_data('applications.json');
                             <td><?= htmlspecialchars($animal['breed']) ?></td>
                             <td><?= htmlspecialchars($animal['status']) ?></td>
                             <td><?= htmlspecialchars($animal['image']) ?></td>
+                            echo "<td><a href=\"delete-record.php?type=animal&id=" . htmlspecialchars($animal['id']) . "\" class=\"delete-btn\">Delete</a></td>";
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -58,6 +60,7 @@ $apps = get_data('applications.json');
                         <th>Phone</th>
                         <th>Status</th>
                         <th>Date</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,6 +72,7 @@ $apps = get_data('applications.json');
                             <td><?= htmlspecialchars($app['phone']) ?></td>
                             <td><?= htmlspecialchars($app['status']) ?></td>
                             <td><?= htmlspecialchars($app['date']) ?></td>
+                            echo "<td><a href=\"delete-record.php?type=application&id=" . htmlspecialchars($app['id']) . "\" class=\"delete-btn\">Delete</a></td>";
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
