@@ -27,6 +27,19 @@ function handleFilter() {
 }
 
 
+function showView(viewId) {
+    if (viewId === 'animal-view') {
+        animalView.style.display = 'block';
+        appview.style.display = 'none';
+    }
+
+    if (viewId === 'app-view') {
+        animalView.style.display = 'none';
+        appview.style.display = 'block';
+    }
+}
+
+
 function renderAnimals(animalList) {
     if (animalContainer) {;
         
