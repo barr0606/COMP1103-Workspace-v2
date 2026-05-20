@@ -28,14 +28,17 @@ function handleFilter() {
 
 
 function showView(viewId) {
+    const animalView = document.getElementById('animal-view');
+    const appView = document.getElementById('app-view');
+    
     if (viewId === 'animal-view') {
         animalView.style.display = 'block';
-        appview.style.display = 'none';
+        appView.style.display = 'none';
     }
 
     if (viewId === 'app-view') {
         animalView.style.display = 'none';
-        appview.style.display = 'block';
+        appView.style.display = 'block';
     }
 }
 

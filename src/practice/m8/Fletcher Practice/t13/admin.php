@@ -19,8 +19,8 @@ $apps = get_data('applications.json');
             Administration
         </h2>
         <div id="admin-view">
-            <button class="page-select" onclick="showView('animal-view')">View Animals</button>"
-            <button class="page-select" onclick="showView('app-view')">View Applications</button>"
+            <button class="page-select" onclick="showView('animal-view')">View Animals</button>
+            <button class="page-select" onclick="showView('app-view')">View Applications</button>
         </div>
         <div id="animal-view" style="display: none;">
             <table>
