@@ -231,7 +231,7 @@ button {
     cursor: pointer;
 }
 
-button[id="delete-btn"] {
+td[id="delete-btn"] {
     background-color: #e74c3c;
     color: #fff;
     display: inline-block;
@@ -245,7 +245,7 @@ button[id="delete-btn"] {
     cursor: pointer;
 }
 
-button[id="delete-btn"]:hover {
+td[id="delete-btn"]:hover {
     background-color: #c0392b;
     color: #fff;
     display: inline-block;
