@@ -6,12 +6,13 @@ if (isset($_GET['app_id']) && isset($_GET['pet_id'])) {
     $pet_id = $_GET['pet_id'];
     $apps = get_data('applications.json');
 
-    foreach ($apps as &$apps) {
-        if ($apps['id'] === $app_id) {
-            $apps['status'] = 'Approved';
+    foreach ($apps as &$app) {
+        if ($app['id'] === $app_id) {
+            $app['status'] = 'approved';
             break;
         }
     }
+    unset($app);
     save_data('applications.json', $apps);
 
     $animals = get_data('animals.json');

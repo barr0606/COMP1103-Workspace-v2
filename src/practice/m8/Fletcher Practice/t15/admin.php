@@ -73,13 +73,15 @@ $apps = get_data('applications.json');
                             <td><?= htmlspecialchars($app['phone']) ?></td>
                             <td><?= htmlspecialchars($app['pet-id']) ?></td>
                             <td>
-                                <span style="color: <?= ($app['status'] === 'approved') ? 'green' : 'black' ?>;">
+                                <span style="color: <?= (strcasecmp($app['status'], 'approved') === 0) ? 'green' : 'black' ?>;">
                                     <?= htmlspecialchars($app['status']) ?>
                                 </span>
                             </td>
                             <td><?= htmlspecialchars($app['date']) ?></td>
-                            <td><a href="delete-record.php?type=application&id=<?= urlencode($app['id']) ?>" class="delete-btn">Delete</a></td>
-                            <td><a href="approve-adoption.php?type=app&app_id=<?= urlencode($app['id']) ?>&pet_id=<?= urlencode($app['pet-id']) ?>" class="approve-btn">Approve</a></td>
+                            <td>
+                                <a href="delete-record.php?type=application&id=<?= urlencode($app['id']) ?>" class="delete-btn">Delete</a>
+                                <a href="approve-adoption.php?type=app&app_id=<?= urlencode($app['id']) ?>&pet_id=<?= urlencode($app['pet-id']) ?>" class="approve-btn">Approve</a>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
