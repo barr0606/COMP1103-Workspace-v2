@@ -259,3 +259,20 @@ button:hover {
     background-color: #c0392b;
     color: #fff;
 }
+
+.approve-btn, a.approve-btn {
+    background-color: #27ae60;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.approve-btn:hover, a.approve-btn:hover {
+    background-color: #219150;
+    color: #fff;
+}

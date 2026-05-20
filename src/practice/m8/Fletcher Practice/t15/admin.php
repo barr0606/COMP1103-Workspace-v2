@@ -58,6 +58,7 @@ $apps = get_data('applications.json');
                         <th>Name</th>
                         <th>Email</th>
                         <th>Phone</th>
+                        <th>Pet ID</th>
                         <th>Status</th>
                         <th>Date</th>
                         <th>Actions</th>
@@ -70,9 +71,15 @@ $apps = get_data('applications.json');
                             <td><?= htmlspecialchars($app['first_name']) . ' ' . htmlspecialchars($app['last_name']) ?></td>
                             <td><?= htmlspecialchars($app['email']) ?></td>
                             <td><?= htmlspecialchars($app['phone']) ?></td>
-                            <td><?= htmlspecialchars($app['status']) ?></td>
+                            <td><?= htmlspecialchars($app['pet-id']) ?></td>
+                            <td>
+                                <span style="color: <?= ($app['status'] === 'approved') ? 'green' : 'black' ?>;">
+                                    <?= htmlspecialchars($app['status']) ?>
+                                </span>
+                            </td>
                             <td><?= htmlspecialchars($app['date']) ?></td>
                             <td><a href="delete-record.php?type=application&id=<?= urlencode($app['id']) ?>" class="delete-btn">Delete</a></td>
+                            <td><a href="approve-adoption.php?type=app&app_id=<?= urlencode($app['id']) ?>&pet_id=<?= urlencode($app['pet-id']) ?>" class="approve-btn">Approve</a></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

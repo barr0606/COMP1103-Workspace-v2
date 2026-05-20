@@ -1,4 +1,7 @@
-<?php include 'inc/header.php'; ?>
+<?php include 'inc/header.php'; 
+require_once __DIR__ . "/inc/file_manager.inc.php";
+$animals = get_data('animals.json');
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -25,6 +28,16 @@
                 <input type="email" id="email" name="email" placeholder="you@example.com" required>
                 <label for="phone">Telephone:</label>
                 <input type="tel" id="phone" name="phone">
+            </fieldset>
+            <fieldset>
+                <legend>Select a Pet</legend>
+                <select id="pet-id" name="pet-id">
+                    <?php foreach ($animals as $animal) : ?>
+                        <option value="<?= htmlspecialchars($animal['id']) ?>">
+                            <?= htmlspecialchars($animal['name']) ?> - <?= htmlspecialchars($animal['breed']) ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
             </fieldset>
             <fieldset>
                 <legend>Housing Details</legend>

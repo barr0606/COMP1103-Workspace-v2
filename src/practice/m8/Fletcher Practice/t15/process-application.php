@@ -14,7 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'yard_type' => $_POST['yardType'] ?? '',
         'message' => $_POST['message'] ?? '',
         'status' => 'Pending',
-        'date' => date('Y-m-d H:i:s')
+        'date' => date('Y-m-d H:i:s'),
+        'pet-id' => htmlspecialchars($_POST['pet-id'])
     ];
 
     $apps[] = $new_app;
