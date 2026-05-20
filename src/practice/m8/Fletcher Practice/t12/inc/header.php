@@ -7,9 +7,9 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="adopt.php">Adopt</a></li>
-                <li><a href="volunteer.php">Volunteer</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="adopttion.php">Adopt a Pet</a></li>
+                <li><a href="application.php">Apply to Adopt</a></li>
+                <li><a href="admin.php">Admin</a></li>
             </ul>
         </nav>
     </header>
