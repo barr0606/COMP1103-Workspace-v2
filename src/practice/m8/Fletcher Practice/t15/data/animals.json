@@ -1,0 +1,50 @@
+[
+    {
+        "id": "DOG-101",
+        "name": "Luna",
+        "type": "Dog",
+        "breed": "British Bulldog",
+        "status": "Adopted",
+        "image": "./imgs/dog-101.jpg"
+    },
+    {
+        "id": "DOG-102",
+        "name": "Lady",
+        "type": "Dog",
+        "breed": "Mixed Breed",
+        "status": "Available",
+        "image": "./imgs/dog-102.jpg"
+    },
+    {
+        "id": "CAT-101",
+        "name": "Whiskers",
+        "type": "Cat",
+        "breed": "Siamese",
+        "status": "Available",
+        "image": "./imgs/cat-101.jpg"
+    },
+    {
+        "id": "DOG-103",
+        "name": "Max",
+        "type": "Dog",
+        "breed": "Beagle",
+        "status": "Adopted",
+        "image": "./imgs/dog-103.jpg"
+    },
+    {
+        "id": "TUR-101",
+        "name": "Gerald",
+        "type": "Turtle",
+        "breed": "Eastern Long Neck Turtle",
+        "status": "Pending",
+        "image": "./imgs/tur-101.jpg"
+    },
+    {
+        "id": "BIR-101",
+        "name": "Sam",
+        "type": "Bird",
+        "breed": "Budgie",
+        "status": "Available",
+        "image": "./imgs/bir-101.jpg"
+    }
+]
