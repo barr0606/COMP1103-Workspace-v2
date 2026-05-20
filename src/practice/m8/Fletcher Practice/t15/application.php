@@ -34,7 +34,7 @@ $animals = get_data('animals.json');
                 <select id="pet-id" name="pet-id">
                     <?php foreach ($animals as $animal) : ?>
                         <option value="<?= htmlspecialchars($animal['id']) ?>">
-                            <?= htmlspecialchars($animal['name']) ?> - <?= htmlspecialchars($animal['breed']) ?>
+                            <?= htmlspecialchars($animal['name']) ?> - <?= htmlspecialchars($animal['type']) ?>
                         </option>
                     <?php endforeach; ?>
                 </select>

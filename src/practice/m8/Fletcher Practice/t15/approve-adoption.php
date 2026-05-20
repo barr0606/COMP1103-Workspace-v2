@@ -1,9 +1,9 @@
 <?php
 require_once 'inc/file_manager.inc.php';
 
-if (isset($_GET['app_id']) && isset($_GET['pet_id'])) {
-    $app_id = $_GET['app_id'];
-    $pet_id = $_GET['pet_id'];
+if (isset($_GET['app-id']) && isset($_GET['pet-id'])) {
+    $app_id = $_GET['app-id'];
+    $pet_id = $_GET['pet-id'];
     $apps = get_data('applications.json');
 
     foreach ($apps as &$app) {
