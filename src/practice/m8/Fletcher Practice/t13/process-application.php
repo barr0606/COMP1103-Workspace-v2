@@ -13,6 +13,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'housing' => $_POST['housing'] ?? '',
         'yard_type' => $_POST['yardType'] ?? '',
         'message' => $_POST['message'] ?? '',
+        'status' => 'Pending',
         'date' => date('Y-m-d H:i:s')
     ];
 
