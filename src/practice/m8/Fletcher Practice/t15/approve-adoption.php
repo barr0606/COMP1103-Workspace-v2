@@ -13,6 +13,10 @@ if (isset($_GET['app_id']) && isset($_GET['pet_id'])) {
     $apps = get_data('applications.json');
 
     foreach ($apps as &$app) {
+        if (!isset($app['id'])) {
+            continue;
+        }
+
         if ($app['id'] === $app_id) {
             $app['status'] = 'approved';
             break;
