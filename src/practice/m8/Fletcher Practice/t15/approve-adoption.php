@@ -38,8 +38,8 @@ if (isset($_GET['app_id']) && isset($_GET['pet_id'])) {
     ];
 
     save_data('adoptions-log.json', $log);
-}
-header('Location: admin.php');
-exit();
 
+    header('Location: admin.php');
+    exit();
+}
 ?>
