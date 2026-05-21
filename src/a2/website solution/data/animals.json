@@ -49,11 +49,11 @@
     },
     {
         "id": "FIS-401",
-        "name": "Luna",
+        "name": "Hudson",
         "type": "Fish",
         "breed": "Goldfish",
         "age": "3 months",
-        "image": "./imgs/FIS-401.jpg"
+        "image": "./imgs/FIS-401.jpeg"
     },
     {
         "id": "BIR-302",

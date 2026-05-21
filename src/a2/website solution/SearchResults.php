@@ -35,10 +35,10 @@ $animals = get_data('animals.json');
                     echo "<p>Type: " . htmlspecialchars($animal['type']) . "</p>";
                     echo "<p>Breed: " . htmlspecialchars($animal['breed']) . "</p>";
                     echo "<p>Age: " . htmlspecialchars($animal['age']) . "</p>";
+                    echo "<input type=\"submit\" id=\"submit\" name=\"submit\">View Details</input>";
                     echo "</div>";
                 }
             ?>
-            <input type="details" id="animal-details" name="details"></input>
         </div>
     </main>
 </body>
