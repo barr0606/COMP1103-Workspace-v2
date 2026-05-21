@@ -4,7 +4,7 @@
         "name": "Luna",
         "type": "Dog",
         "breed": "Golden Retriever",
-        "age": "1 years",
+        "age": "1 year",
         "image": "./imgs/DOG-101.jpg"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Dindi",
         "type": "Cat",
         "breed": "American Shorthair",
-        "age": " 2 year",
+        "age": " 2 years",
         "image": "./imgs/CAT-202.jpeg"
     },
     {
