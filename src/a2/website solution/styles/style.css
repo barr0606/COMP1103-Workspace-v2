@@ -300,3 +300,10 @@ button:hover {
     background-color: #219150;
     color: #fff;
 }
+
+.about-us-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
