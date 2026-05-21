@@ -29,6 +29,7 @@ function renderAnimals(animalList) {
                     <p><strong>Type: </strong>${animal.type}</p>
                     <p><strong>Breed: </strong>${animal.breed}</p>
                     <p><strong>Age: </strong>${animal.age}</p>
+                    <button class="details-button" data-animal-id="${animal.id}">Details</button>
                 </div>
             `;
             animalContainer.innerHTML += cardHTML;

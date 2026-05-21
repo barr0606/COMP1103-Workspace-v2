@@ -8,7 +8,14 @@ body {
     min-height: 100vh;
 }
 
-h1, h2, h3 {
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h2, h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: #2c3e50;
     margin-bottom: 10px;
@@ -71,7 +78,7 @@ footer{
     margin-top: auto;
 }
 
-footer [class="social-icons"] {
+.social-icons {
     color: #fff;
     text-align: center;
     font-size: 1.5rem;
@@ -79,7 +86,7 @@ footer [class="social-icons"] {
     padding: 15px;
 }
 
-footer [class="social-icons"]:hover {
+.social-icons:hover {
     color: #ffd300;
     text-align: center;
     font-size: 1.5rem;
@@ -273,6 +280,23 @@ button:hover {
 }
 
 .approve-btn:hover, a.approve-btn:hover {
+    background-color: #219150;
+    color: #fff;
+}
+
+.details-btn {
+    background-color: #27ae60;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.details-btn:hover {
     background-color: #219150;
     color: #fff;
 }
