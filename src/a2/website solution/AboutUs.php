@@ -15,11 +15,11 @@ include 'inc/header.php';
     <fieldset>
         <legend>Our Mission</legend>
         <table class="no-hover">
-            <tr>
-                <td>
+            <tr class="no-hover">
+                <td class="no-hover">
                     <img class="about-us-img" src="imgs/aboutus-1.jpeg" alt="A picture of 2 dogs and 3 cats lined up in a rown ina meddow.">
                 </td>
-                <td>
+                <td class="no-hover">
                     <p>
                     At [Website Name], our mission is to provide a safe, loving home to animals in need. <br> We accomplish this by connecting with out local community, and providing help to those who's pets need care. <br> By doing this, we hope to build a reputation for our name such that when a person would want to adopt a pet, <br> they would think of us first.
                     </p>
