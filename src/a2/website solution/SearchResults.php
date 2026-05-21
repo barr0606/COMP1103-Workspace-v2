@@ -38,7 +38,7 @@ $animals = get_data('animals.json');
                     echo "<p>Type: " . htmlspecialchars($animal['type']) . "</p>";
                     echo "<p>Breed: " . htmlspecialchars($animal['breed']) . "</p>";
                     echo "<p>Age: " . htmlspecialchars($animal['age']) . "</p>";
-                    echo "<button id=\"details\">Details</button>";
+                    echo "<button class=\"details-btn\" data-animal-id=\"" . htmlspecialchars($animal['id']) . "\">Details</button>";
                     echo "</div>";
                 }
             ?>
