@@ -1,0 +1,66 @@
+[
+    {
+        "id": "DOG-101",
+        "name": "Luna",
+        "type": "Dog",
+        "breed": "Golden Retriever",
+        "age": "1 years",
+        "image": "./imgs/DOG-101.jpg"
+    },
+    {
+        "id": "CAT-201",
+        "name": "Bandit",
+        "type": "Cat",
+        "breed": "Australian Mist",
+        "age": "6 years",
+        "image": "./imgs/CAT-201.jpeg"
+    },
+    {
+        "id": "DOG-102",
+        "name": "Novo",
+        "type": "Dog",
+        "breed": "Toy Poodle",
+        "age": "10 years",
+        "image": "./imgs/DOG-102.jpg"
+    },
+    {
+        "id": "DOG-103",
+        "name": "Toffee",
+        "type": "Dog",
+        "breed": "Labrador Retriever",
+        "age": "5 years",
+        "image": "./imgs/DOG-103.jpg"
+    },
+    {
+        "id": "BIR-301",
+        "name": "Sam",
+        "type": "Bird",
+        "breed": "Budgie",
+        "age": "4 years",
+        "image": "./imgs/BIR-301.jpg"
+    },
+    {
+        "id": "CAT-201",
+        "name": "Dindi",
+        "type": "Cat",
+        "breed": "American Shorthair",
+        "age": " 2 year",
+        "image": "./imgs/CAT-202.jpeg"
+    },
+    {
+        "id": "FIS-401",
+        "name": "Luna",
+        "type": "Fish",
+        "breed": "Goldfish",
+        "age": "3 months",
+        "image": "./imgs/FIS-401.jpg"
+    },
+    {
+        "id": "BIR-302",
+        "name": "Fiona",
+        "type": "Bird",
+        "breed": "Parakeet",
+        "age": "7 years",
+        "image": "./imgs/BIR-302.jpg"
+    }
+]
