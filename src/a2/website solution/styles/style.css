@@ -307,3 +307,7 @@ button:hover {
     border-radius: 8px;
     margin-top: 20px;
 }
+
+table.no-hover tr:hover {
+    background-color: transparent;
+}
