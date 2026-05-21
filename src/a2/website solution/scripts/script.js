@@ -18,26 +18,22 @@ function handleFilter() {
 
 
 function renderAnimals(animalList) {
-    if (animalContainer) {;
-        
-
+    if (animalContainer) {
         animalContainer.innerHTML = '';
 
         animalList.forEach(animal => {
-            // create the cardHTML
             const cardHTML = `
-                <div type="card" class="animal-card">
+                <div class="animal-card">
+                    <img src="${animal.image}" alt="Picture of ${animal.name}">
                     <h2>${animal.name}</h2>
                     <p><strong>Type: </strong>${animal.type}</p>
                     <p><strong>Breed: </strong>${animal.breed}</p>
-                    <p><strong>Status: </strong>${animal.status}</p>
+                    <p><strong>Age: </strong>${animal.age}</p>
                 </div>
             `;
             animalContainer.innerHTML += cardHTML;
         });
-
-        // renderAnimals(filtered)
-    };
+    }
 };
 
 

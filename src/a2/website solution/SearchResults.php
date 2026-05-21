@@ -9,6 +9,9 @@ $animals = get_data('animals.json');
     <meta charset="UTF-8">
     <meta author="Fletcher Barry" description="Search Results Page for [Website Name]">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const animals = <?= json_encode($animals, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
+    </script>
     <script src="scripts/script.js" defer></script>
     <title>Search Results</title>
     <link rel="stylesheet" href="styles/style.css">
@@ -35,7 +38,7 @@ $animals = get_data('animals.json');
                     echo "<p>Type: " . htmlspecialchars($animal['type']) . "</p>";
                     echo "<p>Breed: " . htmlspecialchars($animal['breed']) . "</p>";
                     echo "<p>Age: " . htmlspecialchars($animal['age']) . "</p>";
-                    echo "<input type=\"submit\" id=\"submit\" name=\"submit\">View Details</input>";
+                    echo "<input type=\"submit\" id=\"submit\" name=\"details\"></input>";
                     echo "</div>";
                 }
             ?>
