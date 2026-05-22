@@ -14,11 +14,17 @@ include 'inc/header.php';
 <body>
     <main>
         <h1>Welcome to [Website Name]</h1>
-        <p> At [Website Name], we love, cherish and welcome all animals that come through our doors. <br>
-            We are a local animal shelter that provides a temporary home for animals in need, before <br>
-            finding them a permanent home.
-        </p>
-        <img src="imgs/homepage.jpeg" alt="A picture of various animals, including 3 dogs, a cat, a bird, and a rabbit">
+        <table>
+            <tr>
+                <td>
+                    <p> At [Website Name], we love, cherish and welcome all animals that come through our doors. <br>
+                    We are a local animal shelter that provides a temporary home for animals in need, before <br>
+                    finding them a permanent home.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <img class ="home-page-image" src="imgs/homepage.jpeg" alt="A picture of various animals, including 3 dogs, a cat, a bird, and a rabbit">
     </main>
 
 
