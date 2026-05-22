@@ -1,5 +1,12 @@
 <body>
     <footer>
+        <nav>
+            <ul>
+                <li><a href="Contact.php">Contact Us</a></li>
+                <li><a href="Support.php">Support</a></li>
+                <li><a href="Admin.php">Admin</a></li>
+            </ul>
+        </nav>
         <p>
             © 2026 [Website Name]
         </p>
