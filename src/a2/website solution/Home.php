@@ -24,6 +24,7 @@ include 'inc/header.php';
                 </td>
             </tr>
         </table>
+        <br>
         <img class ="home-page-image" src="imgs/homepage.jpeg" alt="A picture of various animals, including 3 dogs, a cat, a bird, and a rabbit">
     </main>
 
