@@ -18,7 +18,7 @@ include 'inc/header.php';
             <table class="no-hover">
                 <tr class="no-hover">
                     <td class="no-hover">
-                        <img class="about-us-img" src="imgs/aboutus-1.jpeg" alt="A picture of 2 dogs and 3 cats lined up in a rown ina meddow.">
+                        <img class="about-us-img" src="imgs/aboutus-1.jpeg" alt="A picture of 2 dogs and 3 cats lined up in a rown in a meddow.">
                     </td>
                     <td class="no-hover">
                         <p>

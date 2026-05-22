@@ -6,7 +6,7 @@
         <h1>[Website Name]</h1>
         <nav>
             <ul>
-                <li><a href="Home.html">Home Page</a></li>
+                <li><a href="Home.php">Home Page</a></li>
                 <li><a href="AboutUs.php">About Us</a></li>
                 <li><a href="SearchResults.php">Search</a></li>
                 <li><a href="Blog.html">Blog</a></li>
