@@ -311,3 +311,8 @@ button:hover {
 table.no-hover tr:hover {
     background-color: transparent;
 }
+
+.home-page-image {
+    width: 100%;
+    max-width: 1200px;
+}
