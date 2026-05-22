@@ -1,11 +1,14 @@
 {
   "admin1": {
-    "password": ""
+    "password": "$2y$10$Qe7uQx8YpQx8YpQx8YpQxO3u8xq7pQx8YpQx8YpQx8YpQx8YpQx8Yp."
   },
   "admin2": {
-    "password": ""
+    "password": "$2y$10$k1J1pV7u2x8k7Jp7o8eJ8uQ4YpQx8YpQx8YpQx8YpQx8YpQx8Yp."
   },
   "admin3": {
-    "password": ""
+    "password": "$2y$10$wH0q2t1p0z0VQxJrQm7uUu8xq7pQx8YpQx8YpQx8YpQx8YpQx8Yp."
+  },
+  "admin4": {
+    "password": "$2y$10$7u8Qx8YpQx8YpQx8YpQx8u8xq7pQx8YpQx8YpQx8YpQx8YpQx8Yp."
   }
 }
