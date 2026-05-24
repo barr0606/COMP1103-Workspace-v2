@@ -1,11 +1,3 @@
-<script>
-const params = new URLSearchParams(window.location.search);
-if (params.has("animal")) {
-    document.getElementById("animalId").value = params.get("animal");
-}
-</script>
-
-
 <?php
 include 'inc/header.php';
 ?>
@@ -48,8 +40,23 @@ include 'inc/header.php';
         <option value="Large">Large Yard</option>
     </select>
 
-    <!-- This will be filled dynamically when user clicks "Apply" -->
-    <!--<input type="hidden" id="animalId">-->
+    <label for="animalType">Animal Type</label>
+    <select id="animalType" required>
+        <option value="">Select a type...</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Bird">Bird</option>
+        <option value="Fish">Fish</option>
+    </select>
+
+    <label for="animalSelect">Choose an Animal</label>
+    <select id="animalSelect" required disabled>
+        <option value="">Select a type first...</option>
+    </select>
+
+    <!-- Hidden field to store the selected animal ID -->
+    <input type="hidden" id="animalId">
+
 
     <button type="submit">Submit Application</button>
 </form>
@@ -60,5 +67,13 @@ include 'inc/header.php';
 <?php
 include 'inc/footer.php';
 ?>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+if (params.has("animal")) {
+    document.getElementById("animalId").value = params.get("animal");
+}
+</script>
+
 </body>
 </html>
