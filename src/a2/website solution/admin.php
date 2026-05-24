@@ -17,7 +17,7 @@ include 'inc/header.php';
 
 <form action="AdminMain.php" method="POST" onsubmit="return validateLogin()">
     <input type="text" name="username" id="username">
-    <input type="password" name="password" id="password">
+    <input type="text" name="password" id="password">
     <button type="submit">Login Here</button>
 </form>
 
