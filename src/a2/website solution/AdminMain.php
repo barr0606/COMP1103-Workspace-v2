@@ -39,12 +39,18 @@ echo "<p>Loading from: $appFile</p>";
 
 
 if (file_exists($appFile)) {
-    $apps = json_decode(file_get_contents($appFile), true);
+    $json = file_get_contents($appFile);
 
+    // DEBUG BLOCK
     echo "<pre>";
-    var_dump($apps);
+    echo "RAW FILE CONTENTS:\n";
+    echo $json;
+    echo "\n\nJSON ERROR:\n";
+    echo json_last_error_msg();
     echo "</pre>";
+    // END DEBUG BLOCK
 
+    $apps = json_decode($json, true);
 
     foreach ($apps as $app) {
         echo "<div class='application'>";
