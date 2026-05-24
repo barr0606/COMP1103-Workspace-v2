@@ -10,7 +10,7 @@ include 'inc/header.php';
     <link rel="stylesheet" href="styles/style.css">
 
     <!-- Link your JS file -->
-    <script src="applications.js" defer></script>
+    <script src="scripts/applications.js" defer></script>
 </head>
 
 <body>
