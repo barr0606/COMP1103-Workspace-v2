@@ -1,5 +1,4 @@
 <?php
-include 'inc/header.php';
 
 $loginMessage = "";
 
@@ -30,6 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $loginMessage = "<p style='color: red;'>Invalid username or password.</p>";
     }
 }
+include 'inc/header.php';
+
 ?>
 
 
