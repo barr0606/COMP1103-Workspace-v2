@@ -1,6 +1,40 @@
 <?php
+
+$loginMessage = "";
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $u = $_POST['username'] ?? '';
+    $p = $_POST['password'] ?? '';
+
+    $json = file_get_contents("data/users.json");
+    $users = json_decode($json, true);
+
+    $validLogin = false;
+
+    foreach ($users as $user) {
+        if ($user['username'] === $u && md5($p) === $user['password']) {
+            $validLogin = true;
+            break;
+        }
+
+    }
+
+    if ($validLogin) {
+        session_start();
+        $_SESSION['logged_in'] = true;
+        $_SESSION['username'] = $u;
+        header("Location: AdminMain.php?login=success");
+        exit();
+    } else {
+        $loginMessage = "<p style='color: red;'>Invalid username or password.</p>";
+    }
+}
 include 'inc/header.php';
+
 ?>
+
+
+<script src="scripts/users.js"></script>
 
 
 <head>
@@ -11,14 +45,14 @@ include 'inc/header.php';
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
+<?php echo $loginMessage; ?>
 
-<form action="users.php" method="POST" onsubmit="return validateLogin()">
+
+<form action="admin.php" method="POST" onsubmit="return validateLogin()">
     <input type="text" name="username" id="username">
-    <input type="password" name="password" id="password">
-    <button type="submit">Login</button>
+    <input type="text" name="password" id="password">
+    <button type="submit">Login Here</button>
 </form>
-
-<script src="users.js"></script>
 
 
 <?php
