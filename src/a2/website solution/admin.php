@@ -3,6 +3,9 @@ include 'inc/header.php';
 ?>
 
 
+<script src="users.js"></script>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +20,6 @@ include 'inc/header.php';
     <input type="password" name="password" id="password">
     <button type="submit">Login</button>
 </form>
-
-<script src="users.js"></script>
 
 
 <?php
