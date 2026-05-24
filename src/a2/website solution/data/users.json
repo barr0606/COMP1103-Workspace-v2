@@ -1,19 +1,18 @@
 [
   {
     "username": "admin1",
-    "password": "$2y$10$1q8x0p8pZq8x0p8pZq8x0u4mV5o8JqZq8x0p8pZq8x0p8pZq8x0u"
+    "password": "7c6a180b36896a0a8c02787eeafb0e4c"
   },
   {
     "username": "admin2",
-    "password": "$2y$10$7n3k9Qw2uH7k9Qw2uH7k9eF8vP3uH7k9Qw2uH7k9Qw2uH7k9Qw2u"
+    "password": "6cb75f652a9b52798eb6cf2201057c73"
   },
   {
     "username": "admin3",
-    "password": "$2y$10$4b6t1Lm9eC4b6t1Lm9eC4uR2yN8eC4b6t1Lm9eC4b6t1Lm9eC4u"
+    "password": "819b0643d6b89dc9b579fdfc9094f28e"
   },
   {
     "username": "admin4",
-    "password": "$2y$10$9p2v7Sd3kT9p2v7Sd3kT9uQ5xB1kT9p2v7Sd3kT9p2v7Sd3kT9u"
+    "password": "a4b6157317f1cdd9c7e8f9a9f3f7a7f5"
   }
 ]
-

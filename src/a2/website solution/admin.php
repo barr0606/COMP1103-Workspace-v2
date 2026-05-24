@@ -13,10 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $validLogin = false;
 
     foreach ($users as $user) {
-        if ($user['username'] === $u && password_verify($p, $user['password'])) {
+        if ($user['username'] === $u && md5($p) === $user['password']) {
             $validLogin = true;
             break;
         }
+
     }
 
     if ($validLogin) {
