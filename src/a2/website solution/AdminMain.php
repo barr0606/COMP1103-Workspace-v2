@@ -34,7 +34,9 @@ if (isset($_GET['login']) && $_GET['login'] === 'success') {
 <h2>Submitted Applications</h2>
 
 <?php
-$appFile = "data/applications.json";
+$appFile = __DIR__ . "/data/applications.json";
+echo "<p>Loading from: $appFile</p>";
+
 
 if (file_exists($appFile)) {
     $apps = json_decode(file_get_contents($appFile), true);
