@@ -12,7 +12,7 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
         message: document.getElementById("message").value
     };
 
-    fetch("saveApplication.php", {
+    fetch("inc/saveApplication.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
