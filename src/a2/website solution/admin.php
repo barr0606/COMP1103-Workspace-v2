@@ -21,7 +21,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if ($validLogin) {
-        $loginMessage = "<p style='color: green;'>Login successful!</p>";
+        session_start();
+        $_SESSION['logged_in'] = true;
+        $_SESSION['username'] = $u;
+        header("Location: AdminMain.php?login=success");
+        exit();
     } else {
         $loginMessage = "<p style='color: red;'>Invalid username or password.</p>";
     }
