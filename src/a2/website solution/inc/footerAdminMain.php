@@ -5,7 +5,7 @@
                 <li><a href="Contact.php">Contact Us</a></li>
                 <li><a href="Support.php">Support</a></li>
                 <li><a href="admin.php">Admin</a></li>
-                <li><a href="/src/a2/website solution/logout.php">Logout</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
         <p>
