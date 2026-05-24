@@ -1,25 +1,19 @@
 <?php
 session_start();
 
+// Redirect if not logged in
 if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
     header("Location: admin.php");
     exit();
 }
 
-if (isset($GET['login']) && $_GET['login'] === 'success') {
-    echo "<script>console.log('Login successful for user: " . $_SESSION['username'] . "');</script>";
-}
-?>
-
-<?php
-include 'inc/header.php';
-?>
-
-<?php
+// Log the username
 if (isset($_GET['login']) && $_GET['login'] === 'success') {
-    $user = isset($_GET['user']) ? $_GET['user'] : 'unknown';
-    echo "<script>console.log('Login successful for user: $user');</script>";
+    $username = isset($_SESSION['username']) ? $_SESSION['username'] : 'unknown';
+    echo "<script>console.log('Login successful for user: $username');</script>";
 }
+
+include 'inc/header.php';
 ?>
 
 
@@ -42,12 +36,12 @@ if (file_exists($appFile)) {
     $json = file_get_contents($appFile);
 
     // DEBUG BLOCK
-    echo "<pre>";
-    echo "RAW FILE CONTENTS:\n";
-    echo $json;
-    echo "\n\nJSON ERROR:\n";
-    echo json_last_error_msg();
-    echo "</pre>";
+    // echo "<pre>";
+    // echo "RAW FILE CONTENTS:\n";
+    // echo $json;
+    // echo "\n\nJSON ERROR:\n";
+    // echo json_last_error_msg();
+    // echo "</pre>";
     // END DEBUG BLOCK
 
     $apps = json_decode($json, true);

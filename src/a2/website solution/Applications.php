@@ -1,3 +1,11 @@
+<script>
+const params = new URLSearchParams(window.location.search);
+if (params.has("animal")) {
+    document.getElementById("animalId").value = params.get("animal");
+}
+</script>
+
+
 <?php
 include 'inc/header.php';
 ?>
@@ -19,22 +27,35 @@ include 'inc/header.php';
 
 <form id="applicationForm" class="application-form">
 
-    <label for="name">Your Name</label>
-    <input type="text" id="name" required>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" required>
 
-    <label for="email">Your Email</label>
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" required>
+
+    <label for="email">Email</label>
     <input type="email" id="email" required>
 
-    <label for="pet">Pet You Want to Adopt</label>
-    <input type="text" id="pet" required>
+    <label for="yardSize">Yard Size</label>
+    <select id="yardSize" required>
+        <option value="">Select...</option>
+        <option value="None">No Yard</option>
+        <option value="Small">Small Yard</option>
+        <option value="Medium">Medium Yard</option>
+        <option value="Large">Large Yard</option>
+    </select>
 
-    <label for="message">Why do you want to adopt this pet?</label>
-    <textarea id="message" required></textarea>
+    <!-- This will be filled dynamically when user clicks "Apply" -->
+    <input type="hidden" id="animalId">
 
     <button type="submit">Submit Application</button>
 </form>
 
 <p id="status"></p>
+
 
 <?php
 include 'inc/footer.php';

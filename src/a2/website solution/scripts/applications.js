@@ -2,24 +2,29 @@
 
 console.log("applications.js loaded");
 
-document.getElementById("applicationForm").addEventListener("submit", function(e) {
+document.getElementById("applicationForm").addEventListener("submit", async function(e) {
     e.preventDefault();
 
     const data = {
-        name: document.getElementById("name").value,
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        phone: document.getElementById("phone").value,
         email: document.getElementById("email").value,
-        pet: document.getElementById("pet").value,
-        message: document.getElementById("message").value
+        yardSize: document.getElementById("yardSize").value,
+        animalId: document.getElementById("animalId").value,
+        submittedAt: new Date().toISOString()
     };
 
-    fetch("inc/saveApplication.php", {
+    const response = await fetch("php/saveApplication.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
-    })
-    .then(res => res.text())
-    .then(response => {
-        document.getElementById("status").innerText = "Application submitted successfully!";
-        document.getElementById("applicationForm").reset();
     });
+
+    if (response.ok) {
+        document.getElementById("status").textContent = "Application submitted successfully!";
+        document.getElementById("applicationForm").reset();
+    } else {
+        document.getElementById("status").textContent = "Error submitting application.";
+    }
 });
