@@ -39,6 +39,11 @@ $appFile = "data/applications.json";
 if (file_exists($appFile)) {
     $apps = json_decode(file_get_contents($appFile), true);
 
+    echo "<pre>";
+    var_dump($apps);
+    echo "</pre>";
+
+
     foreach ($apps as $app) {
         echo "<div class='application'>";
         echo "<p><strong>Name:</strong> " . htmlspecialchars($app['name']) . "</p>";
