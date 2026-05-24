@@ -48,13 +48,17 @@ if (file_exists($appFile)) {
 
     foreach ($apps as $app) {
         echo "<div class='application'>";
-        echo "<p><strong>Name:</strong> " . htmlspecialchars($app['name']) . "</p>";
-        echo "<p><strong>Email:</strong> " . htmlspecialchars($app['email']) . "</p>";
-        echo "<p><strong>Pet:</strong> " . htmlspecialchars($app['pet']) . "</p>";
-        echo "<p><strong>Message:</strong> " . htmlspecialchars($app['message']) . "</p>";
-        echo "<hr>";
-        echo "</div>";
+
+    foreach ($app as $key => $value) {
+        if (is_array($value)) {
+            $value = implode(", ", $value);
+        }
+        echo "<p><strong>" . ucfirst($key) . ":</strong> " . htmlspecialchars($value) . "</p>";
     }
+
+    echo "<hr>";
+    echo "</div>";
+}
 } else {
     echo "<p>No applications yet.</p>";
 }
