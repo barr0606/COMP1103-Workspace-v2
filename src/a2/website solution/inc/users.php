@@ -1,6 +1,5 @@
-<!-- author Oliver Munro -->
-
 <?php
+    //author Oliver Munro
 session_start();
 
 $json = file_get_contents("users.json");

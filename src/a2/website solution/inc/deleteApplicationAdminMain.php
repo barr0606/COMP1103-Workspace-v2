@@ -1,6 +1,5 @@
-<!-- author Oliver Munro -->
-
 <?php
+    //author Oliver Munro
 $file = __DIR__ . "/../data/applications.json";
 
 $apps = json_decode(file_get_contents($file), true);
