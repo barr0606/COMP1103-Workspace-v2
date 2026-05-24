@@ -31,6 +31,30 @@ if (isset($_GET['login']) && $_GET['login'] === 'success') {
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
+<h2>Submitted Applications</h2>
+
+<?php
+$appFile = "applications.json";
+
+if (file_exists($appFile)) {
+    $apps = json_decode(file_get_contents($appFile), true);
+
+    foreach ($apps as $app) {
+        echo "<div class='application'>";
+        echo "<p><strong>Name:</strong> " . htmlspecialchars($app['name']) . "</p>";
+        echo "<p><strong>Email:</strong> " . htmlspecialchars($app['email']) . "</p>";
+        echo "<p><strong>Pet:</strong> " . htmlspecialchars($app['pet']) . "</p>";
+        echo "<p><strong>Message:</strong> " . htmlspecialchars($app['message']) . "</p>";
+        echo "<hr>";
+        echo "</div>";
+    }
+} else {
+    echo "<p>No applications yet.</p>";
+}
+?>
+
+
+
 <?php
 include 'inc/footerAdminMain.php';
 ?>
