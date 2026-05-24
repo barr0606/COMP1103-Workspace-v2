@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <?php echo $loginMessage; ?>
 
 
-<form action="AdminMain.php" method="POST" onsubmit="return validateLogin()">
+<form action="admin.php" method="POST" onsubmit="return validateLogin()">
     <input type="text" name="username" id="username">
     <input type="text" name="password" id="password">
     <button type="submit">Login Here</button>
