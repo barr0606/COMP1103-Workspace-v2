@@ -7,10 +7,10 @@
         <nav>
             <ul>
                 <li><a href="Home.php">Home Page</a></li>
-                <li><a href="AboutUs.php">About Us</a></li>
                 <li><a href="SearchResults.php">Search</a></li>
                 <li><a href="Applications.php">Apply to Adopt</a></li>
                 <li><a href="Blog.php">Blog</a></li>
+                <li><a href="AboutUs.php">About Us</a></li>
             </ul>
         </nav>
     </header>
