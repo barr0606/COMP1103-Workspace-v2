@@ -4,7 +4,7 @@
             <ul>
                 <li><a href="Contact.php">Contact Us</a></li>
                 <li><a href="Support.php">Support</a></li>
-                <li><a href="Admin.php">Admin</a></li>
+                <li><a href="admin.php">Admin</a></li>
             </ul>
         </nav>
         <p>
