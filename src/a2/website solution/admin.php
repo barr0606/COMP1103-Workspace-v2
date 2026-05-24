@@ -3,7 +3,7 @@ include 'inc/header.php';
 ?>
 
 
-<script src="users.js"></script>
+<script src="scripts/users.js"></script>
 
 
 <head>
