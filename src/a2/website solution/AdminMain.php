@@ -64,12 +64,12 @@ if (file_exists($appFile)) {
 
     echo "
         <div class='app-actions'>
-            <form method='POST' action='inc/markReviewed.php' style='display:inline;'>
+            <form method='POST' action='inc/markReviewedAdminMain.php' style='display:inline;'>
                 <input type='hidden' name='index' value='$index'>
                 <button class='review-btn'>Mark Reviewed</button>
             </form>
 
-            <form method='POST' action='inc/deleteApplication.php' style='display:inline;'>
+            <form method='POST' action='inc/deleteApplicationAdminMain.php' style='display:inline;'>
                 <input type='hidden' name='index' value='$index'>
                 <button class='delete-btn'>Delete</button>
             </form>
