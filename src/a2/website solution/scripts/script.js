@@ -1,3 +1,5 @@
+//author: Fletcher Barry
+
 const animalContainer = document.getElementById('animal-container');
 const searchInput = document.getElementById('search-name');
 const typeDropdown = document.getElementById('filter-type');

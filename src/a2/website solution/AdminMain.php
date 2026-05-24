@@ -32,5 +32,5 @@ if (isset($_GET['login']) && $_GET['login'] === 'success') {
 </head>
 
 <?php
-include 'inc/footer.php';
+include 'inc/footerAdminMain.php';
 ?>
