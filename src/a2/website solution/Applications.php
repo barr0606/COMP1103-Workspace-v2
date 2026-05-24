@@ -49,7 +49,7 @@ include 'inc/header.php';
     </select>
 
     <!-- This will be filled dynamically when user clicks "Apply" -->
-    <input type="hidden" id="animalId">
+    <!--<input type="hidden" id="animalId">-->
 
     <button type="submit">Submit Application</button>
 </form>
