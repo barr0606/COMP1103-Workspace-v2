@@ -29,7 +29,7 @@ include 'inc/header.php';
 
 <?php
 $appFile = __DIR__ . "/data/applications.json";
-echo "<p>Loading from: $appFile</p>";
+// echo "<p>Loading from: $appFile</p>";
 
 
 if (file_exists($appFile)) {
@@ -46,19 +46,39 @@ if (file_exists($appFile)) {
 
     $apps = json_decode($json, true);
 
-    foreach ($apps as $app) {
-        echo "<div class='application'>";
+    foreach ($apps as $index => $app) {
 
+    echo "<div class='app-card'>";
+
+    // Display all fields dynamically
     foreach ($app as $key => $value) {
         if (is_array($value)) {
             $value = implode(", ", $value);
         }
-        echo "<p><strong>" . ucfirst($key) . ":</strong> " . htmlspecialchars($value) . "</p>";
+
+        echo "<div class='app-row'>
+                <span class='app-label'>" . ucfirst($key) . ":</span>
+                <span class='app-value'>" . htmlspecialchars($value) . "</span>
+              </div>";
     }
 
-    echo "<hr>";
+    echo "
+        <div class='app-actions'>
+            <form method='POST' action='markReviewed.php' style='display:inline;'>
+                <input type='hidden' name='index' value='$index'>
+                <button class='review-btn'>Mark Reviewed</button>
+            </form>
+
+            <form method='POST' action='deleteApplication.php' style='display:inline;'>
+                <input type='hidden' name='index' value='$index'>
+                <button class='delete-btn'>Delete</button>
+            </form>
+        </div>
+    ";
+
     echo "</div>";
 }
+
 } else {
     echo "<p>No applications yet.</p>";
 }
