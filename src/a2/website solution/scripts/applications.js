@@ -15,7 +15,7 @@ document.getElementById("applicationForm").addEventListener("submit", async func
         submittedAt: new Date().toISOString()
     };
 
-    const response = await fetch("php/saveApplication.php", {
+    const response = await fetch("inc/saveApplication.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
