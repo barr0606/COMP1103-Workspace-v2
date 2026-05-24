@@ -1,5 +1,30 @@
 <?php
 include 'inc/header.php';
+
+$loginMessage = "";
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $u = $_POST['username'] ?? '';
+    $p = $_POST['password'] ?? '';
+
+    $json = file_get_contents("data/users.json");
+    $users = json_decode($json, true);
+
+    $validLogin = false;
+
+    foreach ($users as $user) {
+        if ($user['username'] === $u && password_verify($p, $user['password'])) {
+            $validLogin = true;
+            break;
+        }
+    }
+
+    if ($validLogin) {
+        $loginMessage = "<p style='color: green;'>Login successful!</p>";
+    } else {
+        $loginMessage = "<p style='color: red;'>Invalid username or password.</p>";
+    }
+}
 ?>
 
 
@@ -13,6 +38,8 @@ include 'inc/header.php';
     <title>Admin Page</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
+<?php echo $loginMessage; ?>
 
 
 <form action="AdminMain.php" method="POST" onsubmit="return validateLogin()">
