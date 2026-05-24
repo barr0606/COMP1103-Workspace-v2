@@ -1,3 +1,5 @@
+<!-- author Oliver Munro -->
+
 <?php
 $file = __DIR__ . "/../data/applications.json";
 

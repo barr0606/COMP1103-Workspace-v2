@@ -29,57 +29,54 @@ include 'inc/header.php';
 
 <?php
 $appFile = __DIR__ . "/data/applications.json";
-// echo "<p>Loading from: $appFile</p>";
-
 
 if (file_exists($appFile)) {
     $json = file_get_contents($appFile);
-
-    // DEBUG BLOCK
-    // echo "<pre>";
-    // echo "RAW FILE CONTENTS:\n";
-    // echo $json;
-    // echo "\n\nJSON ERROR:\n";
-    // echo json_last_error_msg();
-    // echo "</pre>";
-    // END DEBUG BLOCK
-
     $apps = json_decode($json, true);
 
-    foreach ($apps as $index => $app) {
-
-    echo "<div class='app-card'>";
-
-    // Display all fields dynamically
-    foreach ($app as $key => $value) {
-        if (is_array($value)) {
-            $value = implode(", ", $value);
-        }
-
-        echo "<div class='app-row'>
-                <span class='app-label'>" . ucfirst($key) . ":</span>
-                <span class='app-value'>" . htmlspecialchars($value) . "</span>
-              </div>";
+    if (!is_array($apps)) {
+        $apps = [];
     }
 
-    echo "
-        <div class='app-actions'>
-            <form method='POST' action='inc/markReviewedAdminMain.php' style='display:inline;'>
-                <input type='hidden' name='index' value='$index'>
-                <button class='review-btn'>Mark Reviewed</button>
-            </form>
+    if (count($apps) === 0) {
+        echo "<p>No applications yet.</p>";
+    } else {
 
-            <form method='POST' action='inc/deleteApplicationAdminMain.php' style='display:inline;'>
-                <input type='hidden' name='index' value='$index'>
-                <button class='delete-btn'>Delete</button>
-            </form>
-        </div>
-    ";
+        foreach ($apps as $index => $app) {
 
-    echo "</div>";
-}
+            echo "<div class='app-card'>";
+
+            foreach ($app as $key => $value) {
+                if (is_array($value)) {
+                    $value = implode(", ", $value);
+                }
+
+                echo "<div class='app-row'>
+                        <span class='app-label'>" . ucfirst($key) . ":</span>
+                        <span class='app-value'>" . htmlspecialchars($value) . "</span>
+                      </div>";
+            }
+
+            echo "
+                <div class='app-actions'>
+                    <form method='POST' action='inc/markReviewedAdminMain.php' style='display:inline;'>
+                        <input type='hidden' name='index' value='$index'>
+                        <button class='review-btn'>Mark Reviewed</button>
+                    </form>
+
+                    <form method='POST' action='inc/deleteApplicationAdminMain.php' style='display:inline;'>
+                        <input type='hidden' name='index' value='$index'>
+                        <button class='delete-btn'>Delete</button>
+                    </form>
+                </div>
+            ";
+
+            echo "</div>";
+        }
+    }
 
 } else {
+    // File does not exist at all
     echo "<p>No applications yet.</p>";
 }
 ?>
