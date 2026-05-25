@@ -7,7 +7,7 @@ $animals = get_data('animals.json');
 
 <head>
     <meta charset="UTF-8">
-    <meta author="Fletcher Barry" description="Search Results Page for [Website Name]">
+    <meta author="Fletcher Barry" description="Search Results Page for Pet Sanctuary">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         const animals = <?= json_encode($animals, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;

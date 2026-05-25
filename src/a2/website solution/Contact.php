@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Joshua Hearne" description="Contact Page for [Website Name]">
+    <meta author="Joshua Hearne" description="Contact Page for Pet Sanctuary">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>

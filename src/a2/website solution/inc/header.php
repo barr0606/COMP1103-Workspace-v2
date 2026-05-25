@@ -3,7 +3,7 @@
 
 <body>
     <header>
-        <h1>[Website Name]</h1>
+        <h1>Pet Sanctuary</h1>
         <nav>
             <ul>
                 <li><a href="Home.php">Home Page</a></li>

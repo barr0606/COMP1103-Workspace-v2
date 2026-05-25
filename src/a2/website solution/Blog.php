@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Joshua Hearne" description="Blog Page for [Website Name]">
+    <meta author="Joshua Hearne" description="Blog Page for Pet Sanctuary">
     <title>Blog</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
