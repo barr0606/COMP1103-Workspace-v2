@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h3>Sarah Johnsonstance</h3>
                 <p>Animal Care Coordinator</p>
                 <p>📞 (04) 2345 6789</p>
-                <p>Email: sarahjo@websitename.com</p>
+                <p>Email: sarahjo@petsanctuary.com</p>
             </div>
 
            <div style="border: 1px solid #ccc; border-radius: 8px; padding: 24px; width: 250px; text-align: center;">
@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h3>Markyson Davies</h3>
                 <p>Adoption Specialist</p>
                 <p>📞 (04) 8119 1666</p>
-                <p>Email: markda@websitename.com</p>
+                <p>Email: markda@petsanctuary.com</p>
             </div>
 
            <div style="border: 1px solid #ccc; border-radius: 8px; padding: 24px; width: 250px; text-align: center;">
@@ -89,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h3>Emily Chenise</h3>
                 <p>Volunteer Coordinator</p>
                 <p>📞 (04) 4567 8901</p>
-                <p>Email: emilych@websitename.com</p>
+                <p>Email: emilych@petsanctuary.com</p>
             </div>
 
         </div>
