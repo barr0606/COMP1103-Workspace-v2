@@ -12,9 +12,9 @@ $animals = get_data('animals.json');
     <script>
         const animals = <?= json_encode($animals, JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP); ?>;
     </script>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script.js?v=2" defer></script>
     <title>Search Results</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css?v=2">
 </head>
 
 <body>
